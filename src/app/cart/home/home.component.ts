@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Store, StoreModule } from '@ngrx/store';
-import { CounterState } from '../../redux/counter.reducer';
+import { Store, StoreModule } from '@ngrx/store'; 
 import { Observable } from 'rxjs';
 import { increment, decrement } from '../../redux/counter.action';
 import { CommonModule } from '@angular/common';
