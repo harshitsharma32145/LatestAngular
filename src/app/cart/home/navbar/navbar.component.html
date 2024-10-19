@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <span class="app-title">My App</span>
+  <span class="example-spacer"></span>
+ 
+    <div matBadge="{{ badgeCount }}" matBadgeSize="large" class="demo-section"> 
+      <button mat-icon-button aria-label="Favorite" (click)="navigateToFavorite('home')">
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </div>
+  
+  <button mat-icon-button aria-label="Share" (click)="navigateToFavorite(' ')">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>

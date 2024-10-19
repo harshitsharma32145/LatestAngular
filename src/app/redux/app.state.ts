@@ -1,6 +1,7 @@
-import { CounterState } from "./counter.reducer";
+import { PeriodicElement } from "./counter.reducer";
 
 export interface AppState {
-    count: CounterState;
+  tableData: PeriodicElement[];
+
   }
   

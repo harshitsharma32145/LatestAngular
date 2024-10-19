@@ -1,6 +1,40 @@
-<p>home works! updated</p>
-<div>
-    <h1>Counter: {{ count$ | async }}</h1>
-    <button (click)="increment()">Increment</button>
-    <button (click)="decrement()">Decrement</button>
-  </div>
+<h2>Table Data</h2>
+<table *ngIf="(tableData$ | async) as tableData; else loading" class="mat-elevation-z8">
+  <thead>
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Weight</th>
+      <th>Symbol</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngIf="tableData.length > 0; else noData">
+      <tr *ngFor="let item of tableData[0]?.tableData">
+        <td>{{ item.position }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.weight }}</td>
+        <td>{{ item.symbol }}</td>
+        <td>
+          <div class="fab-container" (click)="deleteElement(item.position)">
+            <button mat-fab class="red-fab"  >
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
+
+<ng-template #loading>
+  <tr>
+    <td colspan="4">Loading data...</td>
+  </tr>
+</ng-template>
+
+<ng-template #noData>
+  <tr>
+    <td colspan="4">No data available.</td>
+  </tr>
+</ng-template>

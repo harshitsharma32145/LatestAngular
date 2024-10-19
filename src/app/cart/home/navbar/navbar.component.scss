@@ -1,0 +1,26 @@
+mat-toolbar {
+    background: #1976d2; // Custom background color
+    color: white; // Text color
+  
+    .app-title {
+      font-size: 24px; // Larger font for the app title
+      font-weight: bold; // Bold font
+    }
+  
+    .example-spacer {
+      flex: 1; // This will push the buttons to the right
+    }
+  
+    button {
+      &.mat-icon-button {
+        background: rgba(255, 255, 255, 0.2); // Slightly transparent background
+        border-radius: 50%; // Circular buttons
+        margin-left: 10px; // Space between buttons
+  
+        &:hover {
+          background: rgba(255, 255, 255, 0.3); // Change background on hover
+        }
+      }
+    }
+  }
+  

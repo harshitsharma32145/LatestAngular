@@ -1,0 +1,33 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  .red-fab {
+    background-color: rgb(188, 54, 54);      // Set your desired red color
+    color: white;               // Change icon color to white for better contrast
+  }
+  
+  .red-fab:hover {
+    background-color: darkred;  // Darker shade on hover
+  }
+  

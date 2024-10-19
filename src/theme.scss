@@ -1,0 +1,15 @@
+// @import '@angular/material/theming'; // Without the tilde (~)
+
+
+// // Include the common styles for Angular Material
+// @include mat-core();
+
+// // Define your theme colors
+// $primary: mat-palette($mat-indigo);
+// $accent: mat-palette($mat-pink);
+
+// // Create the theme
+// $my-theme: mat-light-theme($primary, $accent);
+
+// // Include the theme styles
+// @include angular-material-theme($my-theme);
