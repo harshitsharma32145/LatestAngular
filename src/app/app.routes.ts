@@ -10,7 +10,7 @@ export const routes: Routes = [
       component:ShoppingComponent
     },
     {
-        path:' ',
+        path:'',
         component:TableComponent
     },
     {
